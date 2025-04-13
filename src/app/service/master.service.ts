@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MasterService {
-  apiURL: string = 'https://projectapi.gerasim.in/api/BusBooking/'
+  apiURL: string = '/api/BusBooking/'
 
   constructor(private http: HttpClient) { }
 

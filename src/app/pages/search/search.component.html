@@ -17,7 +17,7 @@
                 <select
                   class="form-select"
                   name="fromLocation"
-                  ngModule="searchObj.fromLocation"
+                  [(ngModel)]="searchObj.fromLocation"
                 >
                   <option>Select From Location</option>
                   @for (item of locations$ | async; track $index){
@@ -41,7 +41,7 @@
                 <select
                   class="form-select"
                   name="toLocation"
-                  ngModule="searchObj.toLocation"
+                  [(ngModel)]="searchObj.toLocation"
                 >
                   <option>Select From Location</option>
                   @for (item of locations$ | async; track $index){
@@ -62,7 +62,7 @@
                   class="form-control"
                   placeholder="Date"
                   name="travelDate"
-                  ngModule="searchObj.travelDate"
+                  [(ngModel)]="searchObj.travelDate"
                 />
               </div>
             </div>

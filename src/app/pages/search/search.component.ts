@@ -32,6 +32,7 @@ export class SearchComponent implements OnInit {
   
   onSearch() {
     const {fromLocation, toLocation, travelDate} = this.searchObj;
+    console.log(fromLocation, toLocation)
     this.masterSrv.searchBus(fromLocation, toLocation, travelDate).subscribe((res:any) => {
        this.busList = res;
        console.log(this.busList)
